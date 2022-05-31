@@ -1,0 +1,125 @@
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+  }
+body {
+    font-size: 1.6rem;
+    background-color: #E0E8FF;
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% -20%;
+    letter-spacing: -0.2px;
+}
+
+@font-face {
+    font-family: 'RedHatMed';
+    src: url(/fonts/RedHatDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: 'RedHatBold';
+    src: url(/fonts/RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: 'RedHatBlack';
+    src: url(/fonts/RedHatDisplay-Black.ttf);
+}
+
+.cont-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.contenedor {
+    width: 450px;
+    height: 696px;
+    background-color: #FFF;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 21px 35px -13px rgba(56,41,224,0.32);
+    -webkit-box-shadow: 0px 21px 35px -13px rgba(56,41,224,0.32);
+    -moz-box-shadow: 0px 21px 35px -13px rgba(56,41,224,0.32);
+}
+.img {
+    border-radius: 2rem 2rem 0 0;
+}
+.titulo {
+    height: 3%;
+    font-family: 'RedHatBlack';
+    font-size: 2.8rem;
+    color: #1f2f56;
+    margin-top: 4.4rem;
+}
+.desc {
+    width: 70%;
+    height: 11.4%;
+    text-align: center;
+    font-family: 'RedHatMed';
+    font-size: 1.7rem;
+    color: #7280a7;
+    line-height: 2.4rem;
+}
+
+.plan {
+    height: 9.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #f5f7ff;
+    padding: 0 2.5rem;
+    border-radius: 1.2rem;
+    justify-content: space-between;
+}
+.plan__p {
+    margin-left: 2rem;
+    width: 60%;
+    font-family: 'RedHatBlack';
+    color: #1f2f56;
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+    line-height: 2.6rem;
+}
+.plan__price {
+    font-family: 'RedHatMed';
+    color: #7280a7;
+}
+.plan__a {
+    font-family: 'RedHatBold';
+    font-size: 1.5rem;
+    color: #3829e0;
+}
+.plan__a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.checkout {
+    font-family: 'RedHatBold';
+    font-size: 1.6rem;
+    color: #FFF;
+    background-color: #3829e0;
+    width: 79%;
+    height: 7.2%;
+    border: none;
+    border-radius: 1rem;
+    margin: 3.3rem;
+    cursor: pointer;
+    box-shadow: 0px 19px 35px -13px rgba(56,41,224,0.57);
+    -webkit-box-shadow: 0px 19px 35px -13px rgba(56,41,224,0.57);
+    -moz-box-shadow: 0px 19px 35px -13px rgba(56,41,224,0.57);
+}
+.checkout:hover {
+    background-color: #766CF1;
+}
+.cancel {
+    font-family: 'RedHatBold';
+    text-decoration: none;
+    color: #7280a7;
+    cursor: pointer;
+}
+.cancel:hover {
+    color: #1f2f56;
+}
